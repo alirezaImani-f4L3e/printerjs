@@ -1,0 +1,31 @@
+{
+  "name": "@rso/printer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/types.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "dev" : "yarn build && node lib/index.js",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "bpms"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "prettier": "^2.8.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "puppeteer": "^19.4.0"
+  }
+}
